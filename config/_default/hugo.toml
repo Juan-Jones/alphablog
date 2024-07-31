@@ -30,7 +30,7 @@ pluralizeListTitles = true # Default
 publishDir = 'public' # Default
 relativeURLs = false # Default
 summaryLength = 70 # Default
-titleCaseStyle = 'ap' # Default, other options: Chicago (slightly different) or Go (all first letters capitalized)
+titleCaseStyle = 'AP' # Default, other options: Chicago (slightly different) or Go (all first letters capitalized)
 
 ### Other
 archetypeDir = 'archetypes' # Default
@@ -56,11 +56,9 @@ theme = 'hugo-liftoff'
 [permalinks]
     [permalinks.page]
         # e.g. /subsection/example-post instead of /posts/subsection/example-post
-        blog = '/:sections[last]/:slug/' 
         posts = '/:sections[last]/:slug/' # Removes 'posts' from the permalink structure for posts created under nested sub-sections
     [permalinks.section]
         # e.g. /subsection/ instead of /posts/subsection/
-        blog = '/:slug/'
         posts = '/:slug/'
 
 [markup]
@@ -89,7 +87,7 @@ theme = 'hugo-liftoff'
     anchorLineNos = false
     codeFences = true
     guessSyntax = false
-     # hl_Lines = '1,2,3' # Example of setting specific lines to highlight, adjust as needed or remove if not used
+    hl_Lines = ''
     lineAnchors = ''
     lineNoStart = 1
     lineNos = true # Not the default
@@ -98,8 +96,7 @@ theme = 'hugo-liftoff'
     noHl = false
     style = 'monokai'
     tabWidth = 4
-
-[markup.tableOfContents]
+  [markup.tableOfContents]
     endLevel = 3
     ordered = false
     startLevel = 2
